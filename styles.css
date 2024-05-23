@@ -1,0 +1,145 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: black;
+  color: aliceblue;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200' viewBox='0 0 200 200'%3E%3Cg fill='%23fefdfe' fill-opacity='0.4'%3E%3Cpath fill-rule='evenodd' d='M0 0h40v40H0V0zm40 40h40v40H40V40zm0-40h2l-2 2V0zm0 4l4-4h2l-6 6V4zm0 4l8-8h2L40 10V8zm0 4L52 0h2L40 14v-2zm0 4L56 0h2L40 18v-2zm0 4L60 0h2L40 22v-2zm0 4L64 0h2L40 26v-2zm0 4L68 0h2L40 30v-2zm0 4L72 0h2L40 34v-2zm0 4L76 0h2L40 38v-2zm0 4L80 0v2L42 40h-2zm4 0L80 4v2L46 40h-2zm4 0L80 8v2L50 40h-2zm4 0l28-28v2L54 40h-2zm4 0l24-24v2L58 40h-2zm4 0l20-20v2L62 40h-2zm4 0l16-16v2L66 40h-2zm4 0l12-12v2L70 40h-2zm4 0l8-8v2l-6 6h-2zm4 0l4-4v2l-2 2h-2z'/%3E%3C/g%3E%3C/svg%3E");
+  font-size: 16px;
+  font-family: "Oswald", sans-serif;
+}
+
+a {
+  color: aliceblue;
+  text-decoration: none;
+}
+
+.conteiner {
+  margin: 5%;
+  width: 90%;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+}
+
+.nav-brand {
+  width: 200px;
+}
+
+.nav-main {
+  font-size: 17px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  padding: 20px 0;
+}
+
+.nav-main ul {
+  display: flex;
+}
+
+.nav-main ul li {
+  padding-left: 20px;
+}
+
+.nav-main ul li a:hover {
+  border-bottom: 2px solid #ffffff;
+}
+
+/* SHOCASE */
+hr {
+  margin: 10px 0;
+}
+
+.showcase {
+  width: 100%;
+  color: #ffffff;
+  background: url("./img/baner.jpg") no-repeat center center/cover;
+  height: 550px;
+  padding-bottom: 50px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.btn {
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  font-weight: bold;
+  padding: 10px 20px;
+  background: #262626;
+  color: #ffffff;
+  font-size: 15px;
+  border: 1px solid #ffffff;
+  margin: 10px 0;
+}
+
+.btn:hover {
+  opacity: 0.7;
+}
+
+.showcase h2,
+.showcase p {
+  margin-bottom: 10px;
+}
+
+/* NEW CARDS */
+.row {
+  float: left;
+  width: 100.2%;
+  padding: 1px;
+  display: flex;
+  margin-right: 100%;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.NEW-CARDS img {
+  width: 75%;
+  height: 80%;
+}
+
+/* Social */
+.social {
+  margin: 50px;
+  padding: auto;
+}
+.social p {
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.links a {
+  margin: 0 30px;
+}
+
+.links a i {
+  font-size: 3rem;
+}
+
+#columnas{
+  column-count:4;
+  column-gap:20px;
+  column-rule:4px dotted gray;
+  columns: 4;
+}
